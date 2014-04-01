@@ -1,0 +1,25 @@
+{
+  "name": "webstream",
+  "version": "0.0.0",
+  "description": "Webcamstreamer with mjpg-streamer with raspberry pi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "keywords": [
+    "raspberry",
+    "pi",
+    "mjpg-streamer",
+    "webcamera"
+  ],
+  "author": "Emil Mork",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "~0.4.4",
+    "express": "~3.5.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-nodemon": "~0.2.1",
+    "request": "~2.34.0"
+  }
+}
