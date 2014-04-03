@@ -87,7 +87,7 @@ MStreamer.prototype.takeSnapshot = function(path, callback) {
 
 // Start mjpeg-streamer process
 MStreamer.prototype.start = function(callback) {
-
+    var _this = this;
 
     console.log(getArgs());
 
@@ -114,6 +114,7 @@ MStreamer.prototype.start = function(callback) {
 	    });
 	  
 	    process.on('exit', function (code) {
+            _this.stop();
 	    	print('child process exited with code ' + code);
 	    }); 
 

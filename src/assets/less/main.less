@@ -1,0 +1,51 @@
+//Colors
+@background-color: #EFFAEA;
+@border-color: gray;
+@header-color: #9EC79B;
+@color-white: white;
+//Variables
+@header-height: 100px;
+@margin-default: 20px;
+
+html,body {
+  margin: 0;
+  font-family: 'Georgia';
+  background-color: @background-color;
+  height: 100%;
+}
+
+header {
+  margin-top: 0;
+  width: 100%;
+  height: @header-height;
+  background-color: @header-color;
+  border-bottom: 3px solid @border-color;
+  text-align: center;
+  margin-bottom: @margin-default;
+
+  h2 {
+    margin-top:0;
+    line-height: @header-height;
+    color: @color-white;
+  }
+}
+
+.content-wrapper {
+  margin: 0 auto;
+
+  .video-tag {
+    border: 2px solid @border-color;
+    background-color: @color-white;
+    display: block;
+    height: 400px;
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
